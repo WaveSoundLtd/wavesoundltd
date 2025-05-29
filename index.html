@@ -54,13 +54,29 @@
   </section>
 
   <section id="projects">
-    <h2>Project Gallery</h2>
-    <div class="gallery">
-      <div class="gallery-item">Project 1</div>
-      <div class="gallery-item">Project 2</div>
-      <div class="gallery-item">Project 3</div>
+  <h2>Project Gallery</h2>
+  <div class="carousel">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+    
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <img src="project1.jpeg" alt="Project 1">
+        <p>CCTV Installation – Nairobi</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="project2.jpeg" alt="Project 2">
+        <p>Boosters Installation – Isiolo</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="images/project3.jpeg" alt="Project 3">
+        <p>Studio Setup – Nairobi</p>
+      </div>
     </div>
-  </section>
+    
+    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+  </div>
+</section>
+
 
   
     <!-- Contact Us Widget Area -->
