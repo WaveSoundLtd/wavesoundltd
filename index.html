@@ -84,18 +84,18 @@
   <hr style="border: 1px solid white; margin-bottom: 20px;">
   <h2>Contact Us</h2>
   <p>Have questions or need assistance? Reach out to us!</p>
-  <form action="#" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <form action="https://formsubmit.co/israellewis700@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required><br><br>
+  <input type="email" name="email" placeholder="Your Email" required><br><br>
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <!-- Optional hidden inputs -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+  <button type="submit">Send Message</button>
+</form>
 
-    <button type="submit">Send Message</button>
-  </form>
 </div>
 
     
