@@ -1,4 +1,4 @@
-
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -8,6 +8,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #0d47a1;
   color: white;
@@ -15,11 +16,76 @@ header {
   text-align: center;
 }
 
-.logo {
-  max-width: 120px;
-  margin-bottom: 1rem;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-title p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Nav Menu */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.main-nav li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main-nav li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.main-nav li a:hover {
+  color: #ffc107;
+}
+
+.main-nav li a:hover::after {
+  width: 100%;
+}
+
+/* Section Styling */
 section {
   padding: 2rem;
   max-width: 900px;
@@ -44,6 +110,7 @@ ul li {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
+/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -58,11 +125,13 @@ ul li {
   border-radius: 8px;
 }
 
-a {
-  color: #0d47a1;
-  text-decoration: none;
+.gallery-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -70,8 +139,28 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Links */
+a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .header-container {
+    padding: 1rem;
+  }
+
+  .logo {
+    max-width: 100px;
   }
 }
