@@ -28,7 +28,7 @@ header {
   align-items: left;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 .logo {
